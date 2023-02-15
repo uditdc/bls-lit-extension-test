@@ -1,0 +1,16 @@
+name = "extension-lit-protocol-test"
+version = "1.0.0"
+
+[deployment]
+permission = "private"
+nodes = 1
+
+[build]
+dir = "build"
+entry = "extension-lit-protocol-test_debug.wasm"
+command = "npm run build:debug"
+
+[build_release]
+dir = "build"
+entry = "extension-lit-protocol-test.wasm"
+command = "npm run build:release"

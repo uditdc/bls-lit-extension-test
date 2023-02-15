@@ -1,0 +1,18 @@
+{
+  "name": "extension-lit-protocol-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "APACHE-2.0",
+  "scripts": {
+    "clean": "rm -rf build",
+    "build:release": "npm run clean; asc assembly/index.ts --target release",
+    "build:debug": "npm run clean; asc assembly/index.ts --target debug"
+  },
+  "dependencies": {
+    "@blockless/sdk": "https://github.com/blocklessnetwork/sdk-assemblyscript#f5b9bde3042adab4536d42c5b0c164aa445bd5ce",
+    "as-wasi": "^0.4.6",
+    "assemblyscript": "^0.20.10",
+    "wasi": "^0.0.6"
+  },
+  "private": "false"
+}
